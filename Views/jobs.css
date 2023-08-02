@@ -1,0 +1,91 @@
+.jobs-list{
+    margin:5%;
+    padding: 1rem;
+    background-color: #FBFBFB;
+
+
+}
+/*job card details or box*/
+.job-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin:1rem;
+    min-height: 100px;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    cursor: pointer;
+
+
+
+}
+.job-card hover{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.job-name{
+    display:flex;
+}
+/*sizing images*/
+.job-profile{
+    width:380px;
+    height: 250px;
+    margin:0.5rem;
+}
+.job-detail{
+    padding: 0 10px;
+}
+.job-detail > h4{
+    color:blue;
+    font-size: 1.1rem;
+
+}
+.job-detail > p{
+    display:-webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+.job-label{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.job-label > a{
+    padding: 0.4rem;
+    margin: 0.4rem;
+    color:white;
+    text-decoration:none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+
+}
+.label-a{
+    background-color: grey;
+
+}
+
+.label-b{
+   background-color: black; 
+}
+.job-posted{
+    font-size: 0.8rem;
+}
+.job-more{
+    display:block;
+    padding: 0.3rem 2rem;
+    margin: 20px auto;
+    width: 250px;
+    background-color: transparent;
+    color:blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+    cursor:pointer;
+
+}
+.job-more:hover{
+    background-color:  #FBFBFB;;
+}
