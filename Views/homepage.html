@@ -1,38 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Volunet</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
+
 <body>
+
+    <style>
+        
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(84, 62, 206);
+}
+
+.topnav a.active {
+    background-color: #5d24e4;
+    color: white;
+}
+
+.search {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.job-categories {
+    margin-top: 30px;
+}
+
+.job-categories h2 {
+    color: #333;
+}
+
+.job-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.job-categories li {
+    display: inline;
+    margin: 10px;
+}
+
+.job-categories a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.featured-jobs {
+    margin-top: 50px;
+}
+
+.job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+.job-card h3 {
+    color: #333;
+}
+
+.job-card p {
+    color: #666;
+}
+
+.job-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.cta-section {
+    margin-top: 50px;
+}
+
+.cta-section h2 {
+    color: #333;
+}
+
+.cta-section p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-section a {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-section a:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+
     <div class="topnav">
-        <a class="active" href="homepage.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="jobs.html">Find a Job</a>
         <a href="application.html">My Applications</a>
         <a href="about.html">About</a>
         <a href="signup.html">Sign Up</a>
-        <a href="signup.html">Login</a>
-      </div>
+        <a href="login.html">Login</a>
+    </div>
 
-      <div class="search">
-        <p>Find Volunteer Oppurtunities and help your community today</p>
+    <div class="search">
+        <p>Find Volunteer Opportunities and help your community today</p>
         <form action="#">
-            <input type="text"
-                placeholder=" Search Courses"
-                name="search">
-            <input type="text"
-                placeholder=" Search Courses"
-                name="search">
+            <input type="text" placeholder="Search Courses" name="search">
             <button>
-                <i class="fa fa-search"
-                style="font-size: 18px;">
-            </i>
-        </button>
+                Search<i class="fa fa-search" style="font-size: 18px;"></i>
+            </button>
         </form>
-      </div>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Your Dream Volunteer Job Search</h1>
+
+        <div class="job-categories">
+            <h2>Explore Volunteer Categories</h2>
+            <ul>
+                <li><a href="jobs.html?category=ew">Environmental Work</a></li>
+                <li><a href="jobs.html?category=ar">Animal Rescue</a></li>
+                <li><a href="jobs.html?category=sw">Social Work</a></li>
+                <li><a href="jobs.html?category=healthcare">Healthcare</a></li>
+                <li><a href="jobs.html?category=sal">Sports and Leisure</a></li>
+                <li><a href="jobs.html?category=education">Education</a></li>
+            </ul>
+        </div>
+
+        <div class="featured-jobs">
+            <h2>Featured Jobs</h2>
+            <div class="job-card">
+                <h3>Animal Rescue and Care Officer</h3>
+                <p>KSPCA</p>
+                <p>Location: Karen, Nairobi</p>
+                <a href="jobs.html?id=123">View Details</a>
+            </div>
+            <div class="job-card">
+                <h3>Teacher's Assistant</h3>
+                <p>Kilimani Primary School</p>
+                <p>Location: Kilimani, Nairobi</p>
+                <a href="jobs.html?id=456">View Details</a>
+            </div>
+            <div class="job-card">
+                <h3>Volunteer Program</h3>
+                <p>Kenya Wildlife Service</p>
+                <p>Location: Maasai Mara,Narok </p>
+                <a href="jobs.html?id=789">View Details</a>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Join Us Today</h2>
+            <p>Sign up now to unlock unlimited job opportunities!</p>
+            <a href="signup.html">Get Started</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
