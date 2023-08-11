@@ -44,7 +44,7 @@ body {
     padding: 0 10px;
 }
 .job-detail > h4{
-    color:blue;
+    color: #007BFF;
     font-size: 1.1rem;
 
 }
@@ -87,8 +87,8 @@ body {
     margin: 20px auto;
     width: 250px;
     background-color: transparent;
-    color:blue;
-    border: 1px solid blue;
+    color: #007BFF;
+    border: 1px solid  #007BFF;
     border-radius: 20px;
     cursor:pointer;
 
