@@ -1,14 +1,18 @@
 <?php
-// Include the database connection file
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+
 include 'db_connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Retrieve form data
+  
     $username = $_POST["username"];
     $password = $_POST["password"];
     $confirm_password = $_POST["confirm_password"];
 
-    // Perform a simple validation
+
     if (empty($username) || empty($password) || empty($confirm_password)) {
         echo "Please fill in all fields.";
     } elseif ($password !== $confirm_password) {
